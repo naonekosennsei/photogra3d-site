@@ -1,10 +1,4 @@
 'use strict';
-// An advertised introductory offer ends at midnight after December 10 in Japan.
-// This updates the presentation only; checkout pricing is managed by Lemon Squeezy.
-if (Date.now() >= Date.parse('2026-12-11T00:00:00+09:00')) {
-  document.querySelector('#intro-offer').hidden = true;
-  document.querySelector('#regular-offer').hidden = false;
-}
 const video = document.querySelector('#tutorial-player');
 const start = document.querySelector('#video-start');
 const chapters = Array.from(document.querySelectorAll('.chapter'));
